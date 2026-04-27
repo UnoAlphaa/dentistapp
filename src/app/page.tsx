@@ -1,10 +1,23 @@
-import { Button } from '@/components/ui/button'
-import { SignInButton } from '@clerk/nextjs'
+import Cta from '@/components/landing/Cta'
+import Footer from '@/components/landing/Footer'
+import Header from '@/components/landing/Header'
+import Hero from '@/components/landing/Hero'
+import HowItWorks from '@/components/landing/HowItWorks'
+import PricingSection from '@/components/landing/PricingSection'
+import WhatToAsk from '@/components/landing/WhatToAsk'
 import React from 'react'
 
 const page = () => {
   return (
-    <div></div>
+    <div className='min-h-screen bg-background'>
+      <Header/>
+      <Hero/>
+      <HowItWorks/>
+      <WhatToAsk/>
+      <PricingSection/>
+      <Cta/>
+      <Footer/>
+    </div>
   )
 }
 
